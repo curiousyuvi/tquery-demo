@@ -1,0 +1,35 @@
+.Character-wrapper {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.Character-wrapper input {
+  width: 350px;
+  padding: 0.7rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.Edit-button {
+  width: 350px;
+  border: 1px solid black;
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.Submit-button {
+  width: 350px;
+  border: 1px solid black;
+  text-decoration: none;
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+}
