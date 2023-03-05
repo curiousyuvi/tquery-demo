@@ -9,7 +9,7 @@
     "start:prod": "NODE_ENV=production node build/server.js"
   },
   "dependencies": {
-    "@curiousyuvi/tquery-actions": "^1.0.7",
+    "@curiousyuvi/tquery-actions": "^1.0.9",
     "axios": "^0.21.1",
     "express": "^4.17.1",
     "react": "^17.0.1",

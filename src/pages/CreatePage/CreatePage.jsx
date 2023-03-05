@@ -1,5 +1,6 @@
 import {
   useCreateCharacter,
+  useGetCharacters,
   useTQueryClient,
 } from "@curiousyuvi/tquery-actions";
 import React from "react";
@@ -8,8 +9,6 @@ import "./CreatePage.style.css";
 import { useState } from "react";
 
 const CreatePage = () => {
-  const query = useQuery();
-
   const [id, setId] = useState("");
   const [name, setName] = useState("");
   const [alias, setAlias] = useState("");
@@ -17,10 +16,11 @@ const CreatePage = () => {
 
   const queryClient = useTQueryClient();
   const history = useHistory();
+  const { invalidateQuery } = useGetCharacters();
 
   const mutation = useCreateCharacter(() => {
-    queryClient.invalidateQueries({ queryKey: ["characters"] });
-    alert("Character updated!");
+    invalidateQuery(queryClient);
+    alert("Character created!");
     history.goBack();
   });
 

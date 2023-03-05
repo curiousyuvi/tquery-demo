@@ -11,7 +11,7 @@ import { useState, useEffect } from "react";
 
 const CharacterPage = () => {
   const { id } = useParams();
-  const { data, isLoading, isError } = useGetCharacter(id);
+  const { data, isLoading, isError, invalidateQuery } = useGetCharacter(id);
   const query = useQuery();
 
   const [name, setName] = useState(data?.name || "");
@@ -34,7 +34,7 @@ const CharacterPage = () => {
   const history = useHistory();
 
   const mutation = useUpdateCharacter(() => {
-    queryClient.invalidateQueries({ queryKey: ["characters", data?.id] });
+    invalidateQuery(queryClient, data?.id);
     alert("Character updated!");
     history.goBack();
   });

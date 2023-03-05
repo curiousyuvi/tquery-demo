@@ -1033,10 +1033,10 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
-"@curiousyuvi/tquery-actions@^1.0.7":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@curiousyuvi/tquery-actions/-/tquery-actions-1.0.7.tgz#a8564da046fc951e49c1934f05489d36ebfb16c4"
-  integrity sha512-VXRxqRK2l2WthNaXOjlpt2PnntIRtEEDjtjyVDKvzn5DFgwUG46ZVqLVib25u1GqC4bDtN9vDfXHyZL3R77lgQ==
+"@curiousyuvi/tquery-actions@^1.0.9":
+  version "1.0.9"
+  resolved "https://registry.yarnpkg.com/@curiousyuvi/tquery-actions/-/tquery-actions-1.0.9.tgz#346115c6322c64769cc3f3508585fdad68b1018e"
+  integrity sha512-ocytyaJ4bMKxk06INZzpzh6NBnf39pdbcwVQIRLl/VmQ7Ehxv3NMp2wNWEAD3p+ZlkFnGgSa+5dY3roNbMZSqg==
   dependencies:
     "@tanstack/react-query" "^4.24.10"
     prop-types "^15.7.2"
@@ -1337,17 +1337,17 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
-"@tanstack/query-core@4.24.10":
-  version "4.24.10"
-  resolved "https://registry.yarnpkg.com/@tanstack/query-core/-/query-core-4.24.10.tgz#758e1f5b2d7faf7316d299facd272a9f64c26299"
-  integrity sha512-2QywqXEAGBIUoTdgn1lAB4/C8QEqwXHj2jrCLeYTk2xVGtLiPEUD8jcMoeB2noclbiW2mMt4+Fq7fZStuz3wAQ==
+"@tanstack/query-core@4.26.0":
+  version "4.26.0"
+  resolved "https://registry.yarnpkg.com/@tanstack/query-core/-/query-core-4.26.0.tgz#fc65c8c117e72baead3a82a1f272a4ec210c7650"
+  integrity sha512-9CRqXmCH82KZDKmezoGU4FOn1Oqbzlp2/zf71n+9nC58e7NSqCIjfSCMpqQWcu9YqUcUykxZEUunOyKHVc6BJA==
 
 "@tanstack/react-query@^4.24.10":
-  version "4.24.10"
-  resolved "https://registry.yarnpkg.com/@tanstack/react-query/-/react-query-4.24.10.tgz#2e1004bb1d1f55198961a21e875e2c65ec865130"
-  integrity sha512-FY1DixytOcNNCydPQXLxuKEV7VSST32CAuJ55BjhDNqASnMLZn+6c30yQBMrODjmWMNwzfjMZnq0Vw7C62Fwow==
+  version "4.26.0"
+  resolved "https://registry.yarnpkg.com/@tanstack/react-query/-/react-query-4.26.0.tgz#379b3f7e068b0baf296cff706f4f9dd191c08f8e"
+  integrity sha512-Y5qKyr9AtreTHBPAsn+ulR02E7SyZXPQbwL2tkOcgUAGH2KHHcf7j7NHBhKpaAGB6/vPqkxGYW46epu29V0HqA==
   dependencies:
-    "@tanstack/query-core" "4.24.10"
+    "@tanstack/query-core" "4.26.0"
     use-sync-external-store "^1.2.0"
 
 "@tootallnate/once@1":
