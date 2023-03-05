@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@curiousyuvi/tquery-actions": "^1.0.9",
+    "@tanstack/react-query-devtools": "^4.26.0",
     "axios": "^0.21.1",
     "express": "^4.17.1",
     "react": "^17.0.1",

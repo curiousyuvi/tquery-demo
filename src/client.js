@@ -7,6 +7,7 @@ import {
   TQueryClient,
   TQueryClientProvider,
 } from "@curiousyuvi/tquery-actions";
+import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 
 const dehydratedState = window.__REACT_QUERY_STATE__;
 const queryClient = new TQueryClient();
@@ -17,6 +18,7 @@ hydrate(
       <BrowserRouter>
         <App />
       </BrowserRouter>
+      <ReactQueryDevtools initialIsOpen={false} />
     </Hydrate>
   </TQueryClientProvider>,
   document.getElementById("root")
