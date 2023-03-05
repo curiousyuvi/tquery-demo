@@ -1,7 +1,7 @@
 import { useGetCharacters } from "@curiousyuvi/tquery-actions";
 import React from "react";
 import "./Home.style.css";
-import CharacterCard from "../../components/CharacterCard/CharacterCard";
+import CharacterCard from "../../components/CharacterCard";
 
 const Home = () => {
   const { data, isLoading, isError } = useGetCharacters();
