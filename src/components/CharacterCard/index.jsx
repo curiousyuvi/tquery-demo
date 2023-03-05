@@ -1,5 +1,5 @@
 import React from "react";
-import "./CharacterCard.style.css";
+import "./style.css";
 import { useHistory } from "react-router-dom";
 
 const CharacterCard = ({ id, name, alias, image_url }) => {

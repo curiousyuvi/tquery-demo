@@ -5,7 +5,7 @@ import {
 } from "@curiousyuvi/tquery-actions";
 import React from "react";
 import { useLocation, useParams, useHistory } from "react-router-dom";
-import CharacterCard from "../../components/CharacterCard/CharacterCard";
+import CharacterCard from "../../components/CharacterCard";
 import "./CharacterPage.style.css";
 import { useState, useEffect } from "react";
 

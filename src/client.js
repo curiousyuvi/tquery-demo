@@ -11,23 +11,12 @@ import {
 const dehydratedState = window.__REACT_QUERY_STATE__;
 const queryClient = new TQueryClient();
 
-const ReactQueryDevtoolsProduction = React.lazy(() =>
-  import("@tanstack/react-query-devtools/build/lib/index.prod.js").then(
-    (d) => ({
-      default: d.ReactQueryDevtools,
-    })
-  )
-);
-
 hydrate(
   <TQueryClientProvider client={queryClient}>
     <Hydrate state={dehydratedState}>
       <BrowserRouter>
         <App />
       </BrowserRouter>
-      <React.Suspense fallback={null}>
-        <ReactQueryDevtoolsProduction />
-      </React.Suspense>
     </Hydrate>
   </TQueryClientProvider>,
   document.getElementById("root")
